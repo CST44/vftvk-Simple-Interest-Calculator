@@ -14,7 +14,7 @@ h1 {
 	background-color:white; 
 	color:black; 
 	font-family:verdana;
-	width:300px;
+	width:350px;                      /* taken value of 350px because 300 is not enough and line break automatically */
 	padding:20px;
 	border-radius:20px;
 	margin:auto;
