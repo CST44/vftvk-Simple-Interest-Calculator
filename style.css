@@ -9,14 +9,22 @@ h1 {
 	color:grey; 
 	font-family:verdana;
 }
+tr {
+	height:2em;		/* lines heigth set to 2em to enlarge space between lines */
+}
 .maindiv {
 	/* principal part of screen is writtem black on white */
 	background-color:white; 
 	color:black; 
 	font-family:verdana;
-	width:350px;                      /* taken value of 350px because 300 is not enough and line break automatically */
+	width:500px;
 	padding:20px;
 	border-radius:20px;
+	margin:auto;
+}
+.subDiv {
+	/* sub div created to ident calculation part for header and footer parts */
+	width:400px;
 	margin:auto;
 }
 .resultFont {
