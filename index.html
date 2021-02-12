@@ -6,29 +6,37 @@
     <link rel="stylesheet" href="style.css">		<!--             Styles in external file --> 
     </head>
     <body>
-        <div class='maindiv'>						<!--             Main div containing calculation fields --> 
-            <h1>Simple Interest Calculator</h1>		<!--             Title line --> 
+        <!--             Main div containing calculation fields --> 
+		<div class='maindiv'>
+			<h1 nowrap>Simple Interest Calculator</h1>		<!--             Title line --> 
 
-            Amount <input type="number"  id="principal" onchange='positiveAmount();'>  <br/><br>				<!--             Principal amount field --> 
-            Interest Rate <input type="range"  id="rate" min=1 max =20 step=0.25 value=10.25 onchange='sliderValue();'>  <!--             rate field slider format with changed value displayed--> 
-            <span id=rateSpan> 10.25% </span><br/><br>														
-            No. of Years <select  id="years"> 
-                        <option value=1>1</option>
-                        <option value=2>2</option>
-                        <option value=3>3</option>
-                        <option value=4>4</option>
-                        <option value=5>5</option>
-                        <option value=6>6</option>
-                        <option value=7>7</option>
-                        <option value=8>8</option>
-                        <option value=9>9</option>
-                        <option value=10>10</option>
-            </select><br>
-            <br/><br>
+			<div class='subDiv'>
+				<table>
+					<!--             Principal amount field --> 
+					<tr><td>Amount </td><td><input type="number"  id="principal" onchange='positiveAmount();'> </td></tr>			
+					<!--             rate field slider format with changed value displayed--> 
+					<tr><td>Interest Rate </td><td><input type="range"  id="rate" min=1 max =20 step=0.25 value=10.25 onchange='sliderValue();'>   
+													<span id=rateSpan> 10.25% </span></td></tr>														
+					<tr><td>No. of Years </td>
+						<td><select  id="years"> 
+								<option value=1>1</option>
+								<option value=2>2</option>
+								<option value=3>3</option>
+								<option value=4>4</option>
+								<option value=5>5</option>
+								<option value=6>6</option>
+								<option value=7>7</option>
+								<option value=8>8</option>
+								<option value=9>9</option>
+								<option value=10>10</option>
+					</select>
+					</td></tr>
 
-            <button onclick="compute()">Compute Interest</button>												<!--             Calculation button --> 
-            <br><br>
-            <div id=result></div><br>
+					<!--             Calculation button --> 
+					<tr><td><button onclick="compute()">Compute Interest</button>	</td></tr>
+					<tr><td colspan=2><div id=result></div>
+				</table>
+			</div><br/>
             <footer>&copy; Everyone Can Get Rich</footer>														<!--             Copyright line --> 
         </div>
 		
